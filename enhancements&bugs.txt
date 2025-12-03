@@ -1,0 +1,81 @@
+include rankingScoreThreshold in the UI and API Call
+enhancement
+New feature or request
+Status: Open.
+#255 In eyeix/meilisearch-ui;· tacman opened on Oct 29
+Add a 'cancel task' option
+enhancement
+New feature or request
+Status: Open.
+#254 In eyeix/meilisearch-ui;· tacman opened on Oct 16
+Have the count link to the documents
+enhancement
+New feature or request
+Status: Open.
+#253 In eyeix/meilisearch-ui;· tacman opened on Oct 11
+Add 'received documents' to task list
+enhancement
+New feature or request
+Status: Open.
+#244 In eyeix/meilisearch-ui;· tacman opened on Aug 12
+Totals for tasks page
+enhancement
+New feature or request
+Status: Open.
+#243 In eyeix/meilisearch-ui;· bryceadams opened on Aug 12
+1
+comment
+Indexes and Types columns in Tasks view too small on wide screens
+bug
+Something isn't working
+Status: Open.
+#242 In eyeix/meilisearch-ui;· bryceadams opened on Aug 12
+1
+comment
+handle null dates
+bug
+Something isn't working
+Status: Open.
+#241 In eyeix/meilisearch-ui;· tacman opened on Jul 26
+1
+comment
+Indicate which indexes have pending/processing tasks and how many
+bug
+Something isn't working
+enhancement
+New feature or request
+Status: Open.
+#240 In eyeix/meilisearch-ui;· tacman opened on Jul 26
+Add the sort arrows to the grid view instead of "ST"
+enhancement
+New feature or request
+Status: Open.
+#238 In eyeix/meilisearch-ui;· tacman opened on Jul 3
+Allow connecting with a read-only key
+enhancement
+New feature or request
+Status: Open.
+#227 In eyeix/meilisearch-ui;· tacman opened on Jun 6
+6
+comments
+恢复之前旧版本的，可视化配置功能
+enhancement
+New feature or request
+Status: Open.
+#171 In eyeix/meilisearch-ui;· Avey777 opened on Nov 11, 2024
+1
+comment
+Visual multi-index search.
+enhancement
+New feature or request
+Status: Open.
+#51 In eyeix/meilisearch-ui;· Avey777 opened on May 15, 2023
+10
+comments
+Footer
+© 2025 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status

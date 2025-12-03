@@ -1,4 +1,5 @@
 import { isAuthenticated, isAuthRequired } from "@/lib/auth";
+import { AuthGuard } from "@/components/auth/AuthGuard";
 import { Outlet, createRootRoute, redirect } from "@tanstack/react-router";
 import React from "react";
 
@@ -15,7 +16,9 @@ const TanStackRouterDevtools =
 export const Route = createRootRoute({
 	component: () => (
 		<>
-			<Outlet />
+			<AuthGuard>
+				<Outlet />
+			</AuthGuard>
 			<TanStackRouterDevtools />
 		</>
 	),

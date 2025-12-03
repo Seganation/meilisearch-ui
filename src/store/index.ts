@@ -28,12 +28,14 @@ interface State {
 	warningPageData?: WarningPageData;
 	instances: Instance[];
 	language: SUPPORTED_LANGUAGE;
+	isAuthenticated: boolean;
 	setWarningPageData: (data?: WarningPageData) => void;
 	addInstance: (cfg: Omit<Instance, "updatedTime" | "id">) => void;
 	editInstance: (id: number, cfg: Omit<Instance, "updatedTime" | "id">) => void;
 	removeInstance: (id: number) => void;
 	removeAllInstances: () => void;
 	setLanguage: (lang: SUPPORTED_LANGUAGE) => void;
+	setAuthenticated: (value: boolean) => void;
 }
 
 export const useAppStore = create<State>()(
@@ -42,10 +44,17 @@ export const useAppStore = create<State>()(
 			(set, get) => ({
 				instances: [],
 				language: defaultLanguage,
+				isAuthenticated: false,
 				setWarningPageData: (data?: WarningPageData) =>
 					set(
 						produce((state: State) => {
 							state.warningPageData = data;
+						}),
+					),
+				setAuthenticated: (value: boolean) =>
+					set(
+						produce((state: State) => {
+							state.isAuthenticated = value;
 						}),
 					),
 				addInstance: (cfg) =>

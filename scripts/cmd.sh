@@ -1,5 +1,18 @@
 #!/bin/bash
 
+# transform authentication environment variables
+if [ ! -z "$AUTH_USERNAME" ]; then
+  export VITE_AUTH_USERNAME="$AUTH_USERNAME"
+fi
+
+if [ ! -z "$AUTH_PASSWORD" ]; then
+  export VITE_AUTH_PASSWORD="$AUTH_PASSWORD"
+fi
+
+if [ ! -z "$AUTH_USERNAME" ] && [ ! -z "$AUTH_PASSWORD" ]; then
+  echo "UI authentication enabled"
+fi
+
 # transform singleton mode environment variables
 if [ ! -z "$SINGLETON_HOST" ]; then
   export VITE_SINGLETON_HOST="$SINGLETON_HOST"
